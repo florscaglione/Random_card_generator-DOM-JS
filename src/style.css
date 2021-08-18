@@ -1,6 +1,6 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 body {
-  background: #7e1a68;
+  background: #dabed7;
 }
 .container-fluid {
   padding-top: 10px;
@@ -24,6 +24,16 @@ body {
   left: 5px;
   font-size: 70px;
 }
+#number {
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 40px;
+  right: 110px;
+  font-size: 70px;
+}
 #bottom-suit {
   bottom: 20px;
   right: 20px;
@@ -31,7 +41,7 @@ body {
   justify-content: flex-end;
   text-align: left;
   position: relative;
-  top: 195px;
+  top: 90px;
   right: 10px;
   font-size: 70px;
 }
