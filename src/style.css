@@ -1,1 +1,37 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background: #7e1a68;
+}
+.container-fluid {
+  padding-top: 10px;
+}
+.card {
+  display: inline-block;
+  background: white;
+  margin: auto;
+  height: 400px;
+  width: 250px;
+  border: 1px solid black;
+  position: relative;
+}
+#top-suit {
+  top: 20px;
+  left: 20px;
+  display: flex;
+  justify-content: right;
+  position: relative;
+  top: -10px;
+  left: 5px;
+  font-size: 70px;
+}
+#bottom-suit {
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  text-align: left;
+  position: relative;
+  top: 195px;
+  right: 10px;
+  font-size: 70px;
+}
