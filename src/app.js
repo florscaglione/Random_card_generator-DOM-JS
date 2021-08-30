@@ -1,13 +1,17 @@
-/* eslint-disable */
 import "bootstrap";
+
 import "./style.css";
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
-window.onload = () => {
-  document.querySelector(".card").classList.add(generateRandomSuit());
-  document.querySelector(".card").classList.add(generateRandomNumber());
+let suits = ["spade", "diamond", "heart", "club"];
+window.getCard = function getCard() {
+  let card = document.querySelector(".card");
+  for (let i = 0; i < suits.length; i++) {
+    if (card.classList.contains(suits[i])) {
+      card.classList.remove(suits[i]);
+    }
+  }
+  card.classList.add(generateRandomSuit(suits));
+  card.innerHTML = generateRandomNumber();
 };
 
 let generateRandomNumber = () => {
@@ -30,8 +34,7 @@ let generateRandomNumber = () => {
   return numbers[indexNumbers];
 };
 
-let generateRandomSuit = () => {
-  let suit = ["diamond", "spade", "heart", "club"];
-  let indexSuit = Math.floor(Math.random() * suit.length);
-  return suit[indexSuit];
+let generateRandomSuit = suits => {
+  let indexSuits = Math.floor(Math.random() * suits.length);
+  return suits[indexSuits];
 };

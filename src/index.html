@@ -2,16 +2,27 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Random Card Generator</title>
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Card Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
+    <div class="container-fluid text-center">
       <div class="card">
-        <span id="top-suit">&spades;</span>
-        <span id="number">7</span>
-        <span id="bottom-suit">&spades;</span>
+        <div>
+          <span id="number"></span>
+        </div>
+      </div>
+      <div class="cardButton">
+        <button type="button" class="btn btn-light btn-lg" onclick="getCard();">
+          Carta Nueva
+        </button>
       </div>
     </div>
     <script type="text/javascript" src="bundle/bundle.js"></script>
